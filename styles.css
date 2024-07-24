@@ -1,0 +1,150 @@
+/* Reset some basic elements */
+body, h1, h2, p, input, select, button, form, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* Main section styling */
+main {
+    padding: 2rem;
+}
+
+section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Wallpaper grid styling */
+.wallpaper-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.wallpaper-item {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.wallpaper-item:hover {
+    transform: translateY(-5px);
+}
+
+.wallpaper-item img, .wallpaper-item video {
+    width: 100%;
+    height: auto;
+}
+
+.wallpaper-item .controls {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background: #333;
+}
+
+.wallpaper-item .controls button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: background 0.3s ease;
+    width: 120px;
+}
+
+.wallpaper-item .controls button:hover {
+    background: #ff5a4a;
+}
+
+/* Form styling */
+form {
+    max-width: 400px;
+    margin: 0 auto 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition:  0.3s ease;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Login and Upload Status */
+#upload-status, #login-status {
+    text-align: center;
+    color: #ff6f61;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}

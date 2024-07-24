@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Page</h1>
+    </header>
+    <main>
+        <form id="upload-form">
+            <label for="image-type">Image Type:</label>
+            <select id="image-type" name="image-type" required>
+                <option value="photo">Photo Wallpaper</option>
+                <option value="live">Live Wallpaper</option>
+            </select>
+            <label for="image-file">Choose File:</label>
+            <input type="file" id="image-file" name="image-file" accept="image/*,video/*" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="upload-status"></div>
+        <section id="uploaded-wallpapers">
+            <h2>Uploaded Wallpapers</h2>
+            <div class="wallpaper-grid" id="uploaded-wallpaper-grid">
+                <!-- Uploaded wallpapers will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Wallpaper Website</p>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>
